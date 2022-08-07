@@ -42,6 +42,7 @@ typedef struct builtin_s
 	char *name;
 	int (*f)(char **argv, char **front);
 } builtin_t;
+
 /**
  * struct alias_s - A new struct defining aliases.
  * @name: The name of the alias.
@@ -99,6 +100,7 @@ int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front);
 int shellby_cd(char **args, char __attribute__((__unused__)) **front);
 int shellby_alias(char **args, char __attribute__((__unused__)) **front);
 int shellby_help(char **args, char __attribute__((__unused__)) **front);
+
 
 /* Builtin Helpers */
 char **_copyenv(void);
