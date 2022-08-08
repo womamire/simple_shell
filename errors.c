@@ -1,5 +1,7 @@
 #include "shell.h"
 
+int num_len(int num);
+char *_itoa(int num);
 int create_error(char **args, int err);
 
 /**
