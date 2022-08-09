@@ -161,7 +161,7 @@ char *error_2_syntax(char **args)
 	_strcat(error, hist_str);
 	_strcat(error, ": Syntax error: \"");
 	_strcat(error, args[0]);
-	_strcat(error, "\" unexpected\n);
+	_strcat(error, "\" unexpected\n");
 
 	free(hist_str);
 	return (error);

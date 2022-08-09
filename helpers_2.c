@@ -1,4 +1,4 @@
-#include "shell.c"
+#include "shell.h"
 
 void handle_line(char **line, ssize_t read);
 ssize_t get_new_len(char *line);
@@ -30,7 +30,7 @@ void handle_line(char **line, ssize_t read)
 	for (i = 0; old_line[i]; i++)
 	{
 		current = old_line[i];
-		next = old_line[i + 1]
+		next = old_line[i + 1];
 			if (i != 0)
 			{
 				previous = old_line[i - 1];

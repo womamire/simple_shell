@@ -10,6 +10,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <stdio.h>
+#include <stddef.h>
 
 #define END_OF_FILE -2
 #define EXIT -3
