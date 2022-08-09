@@ -44,7 +44,7 @@ int _strspn(char *s, char *accept)
 		{
 			if (*s == accept[index])
 			{
-				byte++;
+				bytes++;
 				break;
 			}
 		}

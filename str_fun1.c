@@ -1,4 +1,5 @@
-include "shell.h"
+#include "shell.h"
+#include <stddef.h>
 
 
 int _strlen(const char *s);
@@ -12,8 +13,8 @@ char *_strncat(char *dest, const char *src, size_t n);
  *
  * Return: The length of the character string.
  *
- *  */
-/
+ */
+
 int _strlen(const char *s)
 {
 	int length = 0;
