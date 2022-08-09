@@ -93,3 +93,20 @@ void free_alias_list(alias_t *head)
 		head = next;
 	}
 }
+
+/**
+ * free_list - Frees a list_t linked list.
+ * @head: The head of the list_t list.
+ */
+void free_list(list_t *head)
+{
+	list_t *next;
+
+	while (head)
+	{
+		next = head->next;
+		free(head->dir);
+		free(head);
+		head = next;
+	}
+}
