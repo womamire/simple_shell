@@ -161,3 +161,19 @@ void logical_ops(char *line, ssize_t *new_len)
 	previous = *(line - 1);
 	current = *line;
 	next = *(line + 1);
+
+	if (current == '&')
+	{
+		if(next == '&' && previous != ' ')
+			(*new_len)++;
+		else if (previous == '&' && next != ' ')
+			(*new_len)++;
+	}
+	else if (current == '|')
+	{
+		if (next == '|' && previous != ' ')
+			(*new_len)++;
+		else if (previous == '|' && next != ' ')
+			(*new_len)++;
+	}
+}
