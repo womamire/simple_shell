@@ -17,6 +17,13 @@ char *error_126(char **args)
 	hist_str = _itoa(hist);
 	if (!hist_str)
 		return (NULL);
+	len = _strlen(name) + _strlen(hist_str) + _strlen(args[0] + 24;
+	error = malloc(sizeof(char) * (len + 1));
+	if (!error)
+	{
+		free(hist_str);
+		return (NULL);
+	}
 
 	_strcpy(error, name);
 	_strcat(error, ": ");
