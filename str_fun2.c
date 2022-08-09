@@ -17,7 +17,7 @@ int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strchr(char *s, char c)
 {
 	int index;
-	
+
 	for (index = 0; s[index]; index++)
 	{
 		if (s[index] == c)
