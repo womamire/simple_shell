@@ -156,3 +156,13 @@ char *error_2_syntax(char **args)
 		return (NULL);
 	}
 
+	_strcpy(error, name);
+	_strcat(error, ": ");
+	_strcat(error, hist_str);
+	_strcat(error, ": Syntax error: \"");
+	_strcat(error, args[0]);
+	_strcat(error, "\" unexpected\n);
+
+	free(hist_str);
+	return (error);
+}
